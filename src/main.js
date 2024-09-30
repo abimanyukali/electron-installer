@@ -6,7 +6,7 @@ function createMainWindow() {
     width: 500,
     height: 600,
   });
-  mainWindow.loadFile(path.join(__dirname, './index.html'));
+  mainWindow.loadFile(path.join(__dirname, 'src/index.html'));
 }
 app.on('ready',()=>{
   createMainWindow()
