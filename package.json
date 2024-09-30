@@ -1,5 +1,5 @@
 {
-  "name": "try",
+  "name": "installer",
   "version": "1.0.0",
   "main": "src/main.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "build": {
     "appId": "com.yourapp.id",
-    "productName": "ImageResizer",
+    "productName": "Installer",
     "files": [
       "src/**/*"
     ],
