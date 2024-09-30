@@ -1,0 +1,51 @@
+{
+  "name": "try",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "electron-builder",
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "this is my first installer using electro-builder",
+  "devDependencies": {
+    "electron": "^32.1.2",
+    "electron-builder": "^25.0.5"
+  },
+  "build": {
+    "appId": "com.yourapp.id",
+    "productName": "ImageResizer",
+    "files": [
+      "src/**/*"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb",
+        "snap"
+      ],
+      "category": "Utility"
+    },
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "icon_256x256.ico",
+      "uninstallerIcon": "icon_256x256.ico",
+      "uninstallDisplayName": "My Electron App",
+      "runAfterFinish": true,
+      "license": "license.md"
+    }
+  }
+}
